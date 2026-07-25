@@ -1,0 +1,44 @@
+.related-topics {
+  margin: 32px 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+}
+
+.related-topics__heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.related-topics__chain {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.related-topics__step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.related-topics__pill {
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: background 0.15s ease;
+}
+
+.related-topics__pill:hover {
+  background: var(--blue);
+  color: white;
+}
+
+.related-topics__arrow {
+  color: var(--ink-faint);
+}

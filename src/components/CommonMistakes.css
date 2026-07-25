@@ -1,0 +1,40 @@
+.common-mistakes {
+  margin: 24px 0;
+}
+
+.common-mistakes__heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.common-mistakes__item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fdf5e9;
+  border-left: 3px solid var(--orange);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+
+.common-mistakes__icon {
+  color: var(--orange);
+  flex-shrink: 0;
+}
+
+.common-mistakes__title {
+  margin: 0 0 4px 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.common-mistakes__detail {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}

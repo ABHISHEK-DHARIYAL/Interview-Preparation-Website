@@ -1,0 +1,29 @@
+.revision-card {
+  background: var(--ink);
+  color: white;
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  margin: 32px 0 12px;
+}
+
+.revision-card__heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0 0 14px 0;
+  color: #ffffff;
+}
+
+.revision-card__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px 20px;
+}
+
+.revision-card__list li {
+  font-size: 0.87rem;
+  color: rgba(255, 255, 255, 0.9);
+}

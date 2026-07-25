@@ -1,0 +1,29 @@
+.home {
+  padding: 56px 24px 80px;
+}
+
+.home__hero {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+.home__title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 12px;
+}
+
+.home__subtitle {
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 980px;
+  margin: 0 auto;
+}

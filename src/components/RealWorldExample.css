@@ -1,0 +1,32 @@
+.real-world {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: var(--orange-soft);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  margin: 24px 0;
+}
+
+.real-world__icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.real-world__label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 4px;
+}
+
+.real-world__text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink);
+  line-height: 1.6;
+}

@@ -1,0 +1,36 @@
+.key-points {
+  margin: 24px 0;
+}
+
+.key-points__heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.key-points__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.key-points__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: var(--green-soft);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+}
+
+.key-points__check {
+  color: var(--green);
+  font-weight: 700;
+  flex-shrink: 0;
+}

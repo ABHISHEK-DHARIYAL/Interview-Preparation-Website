@@ -1,0 +1,72 @@
+.topic-page {
+  padding: 28px 24px 90px;
+  max-width: 760px;
+}
+
+.topic-page__crumb {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  margin-bottom: 20px;
+}
+
+.topic-page__crumb a {
+  color: var(--blue);
+}
+
+.topic-page__header {
+  margin-bottom: 8px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.topic-page__header h1 {
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  margin-bottom: 8px;
+}
+
+.topic-page__desc {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  margin: 0 0 14px 0;
+}
+
+.topic-page__meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topic-page__time {
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
+
+.topic-page__difficulty {
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 3px 11px;
+  border-radius: 999px;
+}
+
+.topic-page__difficulty--green { background: var(--green-soft); color: var(--green); }
+.topic-page__difficulty--orange { background: var(--orange-soft); color: var(--orange); }
+.topic-page__difficulty--purple { background: var(--purple-soft); color: var(--purple); }
+.topic-page__difficulty--gray { background: var(--gray-soft); color: var(--gray); }
+
+.topic-page__coming-soon-note {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: var(--paper-soft);
+  border: 1px dashed var(--rule);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  margin-top: 20px;
+}
+
+.topic-page__coming-soon-note p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
