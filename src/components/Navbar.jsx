@@ -1,5 +1,6 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import SearchBar from './SearchBar.jsx';
+import ThemeToggle from './ThemeToggle.jsx';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -25,6 +26,7 @@ export default function Navbar() {
         </div>
         <div className="navbar__right">
           <SearchBar />
+          <ThemeToggle />
         </div>
       </div>
     </header>

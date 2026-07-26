@@ -32,6 +32,44 @@
   --font-display: 'Poppins', 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'Roboto Mono', monospace;
+
+  /* Navbar surface (has its own alpha-blended background) */
+  --navbar-bg: rgba(255, 255, 255, 0.9);
+
+  /* Always-dark surface, used for high-contrast accent cards regardless of theme */
+  --surface-invert: #22283a;
+
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --paper: #14161f;
+  --paper-soft: #1c1f2b;
+  --ink: #eceef5;
+  --ink-soft: #aab0c4;
+  --ink-faint: #737a90;
+  --rule: #2c2f3f;
+
+  --blue: #86a4f2;
+  --blue-soft: rgba(134, 164, 242, 0.16);
+  --green: #6fd1a3;
+  --green-soft: rgba(111, 209, 163, 0.15);
+  --orange: #eba86e;
+  --orange-soft: rgba(235, 168, 110, 0.16);
+  --purple: #b8a1ea;
+  --purple-soft: rgba(184, 161, 234, 0.16);
+  --red: #e69089;
+  --red-soft: rgba(230, 144, 137, 0.16);
+  --gray: #9aa0b2;
+  --gray-soft: rgba(154, 160, 178, 0.14);
+
+  --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.28), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.36), 0 2px 6px rgba(0, 0, 0, 0.28);
+
+  --navbar-bg: rgba(20, 22, 31, 0.85);
+  --surface-invert: #0d0f16;
+
+  color-scheme: dark;
 }
 
 * {
@@ -49,6 +87,13 @@ body {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    transition: none;
+  }
 }
 
 #root {
@@ -96,6 +141,27 @@ button {
   margin: 0 auto;
   padding: 0 24px;
   width: 100%;
+}
+
+/* Smooth theme switch across common surfaces without touching every component file */
+.navbar,
+.subject-card,
+.topic-card,
+.definition-box,
+.common-mistakes__item,
+.key-points,
+.memory-trick,
+.real-world,
+.revision-card,
+.searchbar__input,
+.searchbar__results,
+.flow-diagram__step,
+.tree-diagram__node,
+.comparison-card__side,
+.data-table th,
+.data-table td,
+.timeline__content {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {

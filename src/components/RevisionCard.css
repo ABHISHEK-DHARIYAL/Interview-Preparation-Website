@@ -1,9 +1,10 @@
 .revision-card {
-  background: var(--ink);
+  background: var(--surface-invert);
   color: white;
   border-radius: var(--radius-lg);
   padding: 22px 24px;
   margin: 32px 0 12px;
+  transition: background-color 0.2s ease;
 }
 
 .revision-card__heading {
