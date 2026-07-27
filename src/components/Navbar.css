@@ -2,10 +2,13 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: var(--navbar-bg);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--rule);
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+:root[data-theme='dark'] .navbar {
+  background: rgba(25, 28, 38, 0.85);
 }
 
 .navbar__inner {
@@ -65,7 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 12px;
+  gap: 10px;
 }
 
 @media (max-width: 640px) {
